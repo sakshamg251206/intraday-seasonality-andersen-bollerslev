@@ -1,0 +1,23 @@
+\begin{tabular}{llrrrrrr}
+\toprule
+Asset & Model & QLIKE & $\Delta$ vs M0 (\%) & DM $t$ vs M0 & DM $t$ vs M1 & DM $t$ vs M4 & Risk error \\
+\midrule
+\multirow{5}{*}{EUR/USD} & M0 flat & -6.1926 & 0.00 & -- & 21.1 &  & 0.329 \\
+ & M1 hist. profile & -6.4775 & -4.60 & -21.1 & -- &  & 0.078 \\
+ & M2 FFF & -6.4627 & -4.36 & -18.9 & 5.6 &  & 0.102 \\
+ & M3 FFF+intraday GARCH & -6.6410 & -7.24 & -26.0 & -7.0 & -10.7 & 0.108 \\
+ & M4 raw intraday GARCH & -6.5480 & -5.74 & -20.8 & -2.7 &  & 0.160 \\
+\midrule
+\multirow{5}{*}{S\&P 500} & M0 flat & -3.8895 & 0.00 & -- & 13.6 &  & 0.157 \\
+ & M1 hist. profile & -3.9541 & -1.66 & -13.6 & -- &  & 0.044 \\
+ & M2 FFF & -3.9484 & -1.51 & -13.3 & 3.9 &  & 0.061 \\
+ & M3 FFF+intraday GARCH & -4.1932 & -7.81 & -17.9 & -13.7 & -20.1 & 0.070 \\
+ & M4 raw intraday GARCH & -4.1413 & -6.47 & -14.7 & -10.4 &  & 0.134 \\
+\midrule
+\multirow{5}{*}{BTC/USDT} & M0 flat & -2.8099 & 0.00 & -- & 14.6 &  & 0.215 \\
+ & M1 hist. profile & -2.8543 & -1.58 & -14.6 & -- &  & 0.158 \\
+ & M2 FFF & -2.9023 & -3.29 & -20.9 & -14.1 &  & 0.145 \\
+ & M3 FFF+intraday GARCH & -3.3636 & -19.71 & -24.2 & -21.8 & -4.0 & 0.089 \\
+ & M4 raw intraday GARCH & -3.3598 & -19.57 & -23.5 & -21.1 &  & 0.094 \\
+\bottomrule
+\end{tabular}

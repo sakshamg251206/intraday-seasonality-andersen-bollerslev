@@ -12,3 +12,5 @@ paper/*.blg
 paper/*.fls
 paper/*.fdb_latexmk
 .DS_Store
+results/logs/
+results/*.pkl

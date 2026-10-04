@@ -1,0 +1,95 @@
+{
+  "H2_rolling_windows": {
+    "btc": {
+      "windows": 8,
+      "share_filtered_better": 0.625,
+      "wilcoxon_p": 0.2305,
+      "median_min_persistence_raw": 0.888,
+      "median_min_persistence_filtered": 0.887
+    },
+    "eurusd": {
+      "windows": 20,
+      "share_filtered_better": 0.85,
+      "wilcoxon_p": 0.0002,
+      "median_min_persistence_raw": 0.089,
+      "median_min_persistence_filtered": 0.871
+    },
+    "spx": {
+      "windows": 14,
+      "share_filtered_better": 0.857,
+      "wilcoxon_p": 0.0176,
+      "median_min_persistence_raw": 0.93,
+      "median_min_persistence_filtered": 0.947
+    }
+  },
+  "H6_oos_qlike": {
+    "eurusd": {
+      "M3_vs_M4_DM_t": -10.68,
+      "M3_gain_vs_flat_pct": 7.24,
+      "risk_error_flat": 0.329,
+      "risk_error_hist_profile": 0.078
+    },
+    "spx": {
+      "M3_vs_M4_DM_t": -20.11,
+      "M3_gain_vs_flat_pct": 7.81,
+      "risk_error_flat": 0.157,
+      "risk_error_hist_profile": 0.044
+    },
+    "btc": {
+      "M3_vs_M4_DM_t": -4.03,
+      "M3_gain_vs_flat_pct": 19.71,
+      "risk_error_flat": 0.215,
+      "risk_error_hist_profile": 0.158
+    }
+  },
+  "H5_test_trading_base_cost": [
+    {
+      "asset": "eurusd",
+      "strategy": "FDR intervals",
+      "gross_sharpe": 0.41,
+      "net_sharpe": -12.38,
+      "breakeven_bp": 0.019,
+      "cost_bp": 0.6
+    },
+    {
+      "asset": "eurusd",
+      "strategy": "HKS same-interval momentum",
+      "gross_sharpe": 3.96,
+      "net_sharpe": -47.79,
+      "breakeven_bp": 0.046,
+      "cost_bp": 0.6
+    },
+    {
+      "asset": "spx",
+      "strategy": "FDR intervals",
+      "gross_sharpe": -0.43,
+      "net_sharpe": -2.14,
+      "breakeven_bp": -0.189,
+      "cost_bp": 0.75
+    },
+    {
+      "asset": "spx",
+      "strategy": "HKS same-interval momentum",
+      "gross_sharpe": 1.84,
+      "net_sharpe": -8.29,
+      "breakeven_bp": 0.136,
+      "cost_bp": 0.75
+    },
+    {
+      "asset": "btc",
+      "strategy": "HKS same-interval momentum",
+      "gross_sharpe": 0.76,
+      "net_sharpe": -204.88,
+      "breakeven_bp": 0.037,
+      "cost_bp": 10.0
+    }
+  ],
+  "H7_btc_us_hours_variance_share": {
+    "pre_2y": 0.4085,
+    "post_2y": 0.4518,
+    "diff_ci95": [
+      0.0139,
+      0.0643
+    ]
+  }
+}

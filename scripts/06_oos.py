@@ -258,7 +258,7 @@ def fig_trading(curves_all):
                         ha="center", va="center", transform=ax.transAxes, color=INK2, fontsize=9)
                 ax.set_xticks([]); ax.set_yticks([])
             be = curves.get((strat, "breakeven"), np.nan)
-            sub = (f"break-even {be * 1e4:.2f} bp vs cost {COSTS[key][1] * 1e4:.1f} bp per round trip"
+            sub = (f"break-even {be * 100:.3f} bp vs cost {COSTS[key][1] * 100:.2f} bp per round trip"
                    if np.isfinite(be) else "")
             ax.set_title(f"{NAME[key]}: {strat}\n{sub}", fontsize=8.5)
             ax.axhline(0, color=INK2, lw=0.5)

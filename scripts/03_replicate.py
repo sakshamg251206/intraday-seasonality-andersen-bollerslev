@@ -206,8 +206,9 @@ def main():
             ax.plot(ref.index, ref[col].clip(upper=1.05), "s--", color=c, ms=3.5, lw=0.9, mfc="none", alpha=0.85,
                     label=f"{lbl}: A&B 1997")
         ax.set_xscale("log")
-        ticks = list(out[key]["t2"].index)
+        ticks = [k for k in out[key]["t2"].index if k in (1, 2, 4, 8, 16, 36, 72, 144, 5, 10, 20, 40)]
         ax.set_xticks(ticks, [str(k) for k in ticks], fontsize=7)
+        ax.minorticks_off()
         ax.set_xlabel("Return interval k (x 5 minutes)")
         ax.set_title(f"{('EUR/USD vs DM-$' if key=='eurusd' else 'S&P 500 (2022-25 vs 1986-89)')}")
         ax.axhline(1, color=MUTED, lw=0.6, ls=":")

@@ -1,0 +1,38 @@
+cff-version: 1.2.0
+message: "If you use this software or its results, please cite it as below, together with the original paper."
+title: "Intraday Periodicity and Volatility Persistence, Revisited: A Replication and Extension of Andersen & Bollerslev (1997)"
+type: software
+authors:
+  - family-names: Garg
+    given-names: Saksham
+version: 1.0.0
+date-released: 2026-10-05
+license: MIT
+keywords:
+  - intraday seasonality
+  - volatility
+  - GARCH
+  - flexible Fourier form
+  - replication
+  - high-frequency finance
+abstract: >-
+  Replication of Andersen & Bollerslev (1997) on EUR/USD (2004-2025), S&P 500
+  (2010-2025) and BTC/USDT (2018-2025) with free data, a zero-robust Poisson
+  pseudo-ML estimator of the intraday periodic component, rolling-window
+  robustness, and strict walk-forward out-of-sample tests of volatility
+  forecasts and intraday trading rules.
+references:
+  - type: article
+    authors:
+      - family-names: Andersen
+        given-names: Torben G.
+      - family-names: Bollerslev
+        given-names: Tim
+    title: "Intraday periodicity and volatility persistence in financial markets"
+    journal: "Journal of Empirical Finance"
+    volume: 4
+    issue: "2-3"
+    start: 115
+    end: 158
+    year: 1997
+    doi: "10.1016/S0927-5398(97)00004-2"
