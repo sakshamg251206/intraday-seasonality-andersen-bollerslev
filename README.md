@@ -139,7 +139,7 @@ make all          # or ./reproduce.sh
 | Step | Command | What it does | Runtime* |
 |---|---|---|---|
 | 0 | `make test` | unit and recovery tests (FFF, PPML, GARCH, aggregation, no-look-ahead panels) | seconds |
-| 1 | `make data` | download and cache about 4 GB of raw data, build price files | ~20 min |
+| 1 | `make data` | download and cache ~150 MB of raw zips (~180 MB processed), build price files | ~20 min |
 | 2 | `make validate` | panels, quality report, clock check, Dukascopy cross-check | ~5 min + rate-limited cross-check |
 | 3 | `make replicate` | A&B Figs 1–7 and Tables 1–5 | ~3 min |
 | 4 | `make extensions` | H3, H4, H7 and descriptive H5 | ~2 min |
