@@ -1,0 +1,7 @@
+asset,series,skew,kurtosis,share_beyond_4sd
+eurusd,R / sd(R),0.2028,40.3020,0.0072
+eurusd,R / (sigma_t s_n),0.1119,33.4919,0.0050
+spx,R / sd(R),0.5836,53.1563,0.0070
+spx,R / (sigma_t s_n),-0.1703,10.3407,0.0042
+btc,R / sd(R),0.0382,133.0424,0.0080
+btc,R / (sigma_t s_n),-1.0260,113.4047,0.0066

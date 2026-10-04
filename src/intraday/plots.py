@@ -31,7 +31,7 @@ def setup() -> None:
         "figure.dpi": 110, "savefig.dpi": 200, "savefig.bbox": "tight",
         "figure.facecolor": SURFACE, "axes.facecolor": SURFACE, "savefig.facecolor": SURFACE,
         "font.family": "sans-serif", "font.size": 9.5,
-        "axes.titlesize": 10.5, "axes.titleweight": "semibold", "axes.titlelocation": "left",
+        "axes.titlesize": 10.5, "axes.titleweight": "bold", "axes.titlelocation": "left",
         "axes.labelcolor": INK2, "axes.edgecolor": MUTED, "axes.linewidth": 0.6,
         "axes.spines.top": False, "axes.spines.right": False,
         "axes.grid": True, "grid.color": GRID, "grid.linewidth": 0.6,

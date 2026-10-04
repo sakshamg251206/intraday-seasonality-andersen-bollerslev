@@ -171,3 +171,13 @@ def garch_by_frequency(R: pd.DataFrame, bar_minutes: int = 5, ks: list[int] | No
     with ProcessPoolExecutor(workers) as ex:
         rows = list(ex.map(_fit_one, jobs))
     return pd.DataFrame(rows).set_index("k")
+
+
+def ex_ante_daily_sigma(daily: pd.Series, train_end_year: int) -> tuple[pd.Series, "GarchFit"]:
+    """sigma_t for every day using parameters estimated on years <= train_end_year.
+
+    The recursion only uses returns up to t-1, and the parameters only use the
+    training period, so sigma_t is a genuine ex-ante forecast for test days.
+    """
+    fit = fit_ma1_garch11(daily[daily.index.year <= train_end_year])
+    return conditional_sd(fit, daily), fit

@@ -1,0 +1,4 @@
+asset,train_days,N,naive_p<0.05,expected_false_at_5%,bh_fdr_discoveries,discovered_intervals
+eurusd,3250,288,48,14.4,19,"6,7,8,35,47,52,109,120,121,167,168,169,170,180,183,184,185,217,273"
+spx,1525,80,7,4.0,4,"41,75,76,78"
+btc,1432,288,21,14.4,0,

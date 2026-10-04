@@ -1,0 +1,3 @@
+measure,pre_2y_mean,post_2y_mean,diff,ci_lo,ci_hi,pre_days,post_days
+variance_share,0.4085,0.4518,0.0433,0.0139,0.0643,521,515
+volume_share,0.3707,0.3982,0.0275,0.0084,0.0405,521,515

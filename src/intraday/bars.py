@@ -30,6 +30,8 @@ class Panel:
     R: pd.DataFrame        # T x N percent log returns
     fresh: pd.DataFrame    # T x N bool, price updated inside the interval
     volume: pd.DataFrame   # T x N traded volume (NaN if source has none)
+    activity: pd.DataFrame # T x N number of source bars in the interval (HistData:
+                           # active 1-min bars, 0-5 = quote-activity proxy)
     daily: pd.Series       # daily percent log return incl. overnight / weekend gap
     dropped: pd.Series     # dates dropped by the quality filter -> reason
 
@@ -89,6 +91,7 @@ def build_panel(asset: Asset, prices: pd.DataFrame) -> Panel:
     fresh = pd.DataFrame(last_obs[:, 1:] > grid.values[:, :-1], index=days, columns=R.columns)
 
     volume = _interval_volume(prices, grid, R)
+    activity = _interval_volume(prices.assign(volume=1.0), grid, R)
 
     reasons = {}
     frac = fresh.mean(axis=1)
@@ -113,8 +116,8 @@ def build_panel(asset: Asset, prices: pd.DataFrame) -> Panel:
     keep = ~days.isin(dropped.index)
 
     daily = daily_all[keep]
-    R, fresh, volume = R[keep], fresh[keep], volume[keep]
-    return Panel(asset, R, fresh, volume, daily, dropped)
+    R, fresh, volume, activity = R[keep], fresh[keep], volume[keep], activity[keep]
+    return Panel(asset, R, fresh, volume, activity, daily, dropped)
 
 
 def _asof(grid: pd.DataFrame, obs: pd.DataFrame) -> pd.DataFrame:
@@ -161,3 +164,9 @@ def get_panel(key: str, rebuild: bool = False) -> Panel:
     P = build_panel(ASSETS[key], load_prices(key))
     path.write_bytes(pickle.dumps(P))
     return P
+
+
+def interval_end_utc(P: Panel) -> pd.DataFrame:
+    """UTC end time of every (day, interval) cell of a panel."""
+    g = _grid(P.asset, pd.DatetimeIndex(P.R.index))
+    return pd.DataFrame(g.values[:, 1:], index=P.R.index, columns=P.R.columns)

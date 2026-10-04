@@ -1,0 +1,55 @@
+asset,strategy,sample,cost,cost_pct_rt,trades_per_day,days,gross_mean_daily_pct,gross_sharpe,gross_t_NW,net_mean_daily_pct,net_sharpe,breakeven_cost_pct_rt,fdr_intervals
+eurusd,FDR intervals,train,low,0.00300,19,3250,0.07270,6.77173,20.25861,0.01570,1.46271,0.00383,19
+eurusd,FDR intervals,train,base,0.00600,19,3250,0.07270,6.77173,20.25861,-0.04130,-3.84631,0.00383,19
+eurusd,FDR intervals,train,high,0.01200,19,3250,0.07270,6.77173,20.25861,-0.15530,-14.46435,0.00383,19
+eurusd,FDR intervals,validation,low,0.00300,19,773,0.00275,0.38635,0.66706,-0.05425,-7.63546,0.00014,19
+eurusd,FDR intervals,validation,base,0.00600,19,773,0.00275,0.38635,0.66706,-0.11125,-15.65726,0.00014,19
+eurusd,FDR intervals,validation,high,0.01200,19,773,0.00275,0.38635,0.66706,-0.22525,-31.70087,0.00014,19
+eurusd,FDR intervals,test,low,0.00300,19,1423,0.00369,0.41376,0.94111,-0.05331,-5.98338,0.00019,19
+eurusd,FDR intervals,test,base,0.00600,19,1423,0.00369,0.41376,0.94111,-0.11031,-12.38052,0.00019,19
+eurusd,FDR intervals,test,high,0.01200,19,1423,0.00369,0.41376,0.94111,-0.22431,-25.17480,0.00019,19
+eurusd,HKS same-interval momentum,train,low,0.00300,288,3250,0.08951,2.19538,8.38615,-0.77449,-18.99569,0.00031,19
+eurusd,HKS same-interval momentum,train,base,0.00600,288,3250,0.08951,2.19538,8.38615,-1.63849,-40.18677,0.00031,19
+eurusd,HKS same-interval momentum,train,high,0.01200,288,3250,0.08951,2.19538,8.38615,-3.36649,-82.56892,0.00031,19
+eurusd,HKS same-interval momentum,validation,low,0.00300,288,773,0.06438,2.36452,4.08284,-0.79962,-29.36670,0.00022,19
+eurusd,HKS same-interval momentum,validation,base,0.00600,288,773,0.06438,2.36452,4.08284,-1.66362,-61.09791,0.00022,19
+eurusd,HKS same-interval momentum,validation,high,0.01200,288,773,0.06438,2.36452,4.08284,-3.39162,-124.56033,0.00022,19
+eurusd,HKS same-interval momentum,test,low,0.00300,288,1423,0.13213,3.95706,9.00693,-0.73187,-21.91834,0.00046,19
+eurusd,HKS same-interval momentum,test,base,0.00600,288,1423,0.13213,3.95706,9.00693,-1.59587,-47.79374,0.00046,19
+eurusd,HKS same-interval momentum,test,high,0.01200,288,1423,0.13213,3.95706,9.00693,-3.32387,-99.54454,0.00046,19
+spx,FDR intervals,train,low,0.00400,4,1525,0.02725,2.63814,6.64361,0.01125,1.08903,0.00681,4
+spx,FDR intervals,train,base,0.00750,4,1525,0.02725,2.63814,6.64361,-0.00275,-0.26645,0.00681,4
+spx,FDR intervals,train,high,0.01500,4,1525,0.02725,2.63814,6.64361,-0.03275,-3.17104,0.00681,4
+spx,FDR intervals,validation,low,0.00400,4,742,0.01280,1.23377,2.14323,-0.00320,-0.30788,0.00320,4
+spx,FDR intervals,validation,base,0.00750,4,742,0.01280,1.23377,2.14323,-0.01720,-1.65683,0.00320,4
+spx,FDR intervals,validation,high,0.01500,4,742,0.01280,1.23377,2.14323,-0.04720,-4.54743,0.00320,4
+spx,FDR intervals,test,low,0.00400,4,1382,-0.00754,-0.42904,-0.95784,-0.02354,-1.33905,-0.00189,4
+spx,FDR intervals,test,base,0.00750,4,1382,-0.00754,-0.42904,-0.95784,-0.03754,-2.13531,-0.00189,4
+spx,FDR intervals,test,high,0.01500,4,1382,-0.00754,-0.42904,-0.95784,-0.06754,-3.84158,-0.00189,4
+spx,HKS same-interval momentum,train,low,0.00400,80,1525,0.02901,0.64943,1.64053,-0.29099,-6.51526,0.00036,4
+spx,HKS same-interval momentum,train,base,0.00750,80,1525,0.02901,0.64943,1.64053,-0.57099,-12.78436,0.00036,4
+spx,HKS same-interval momentum,train,high,0.01500,80,1525,0.02901,0.64943,1.64053,-1.17099,-26.21815,0.00036,4
+spx,HKS same-interval momentum,validation,low,0.00400,80,742,0.02224,0.55656,0.93765,-0.29776,-7.45074,0.00028,4
+spx,HKS same-interval momentum,validation,base,0.00750,80,742,0.02224,0.55656,0.93765,-0.57776,-14.45712,0.00028,4
+spx,HKS same-interval momentum,validation,high,0.01500,80,742,0.02224,0.55656,0.93765,-1.17776,-29.47080,0.00028,4
+spx,HKS same-interval momentum,test,low,0.00400,80,1382,0.10919,1.84410,4.61281,-0.21081,-3.56028,0.00136,4
+spx,HKS same-interval momentum,test,base,0.00750,80,1382,0.10919,1.84410,4.61281,-0.49081,-8.28911,0.00136,4
+spx,HKS same-interval momentum,test,high,0.01500,80,1382,0.10919,1.84410,4.61281,-1.09081,-18.42233,0.00136,4
+btc,FDR intervals,train,low,0.02000,0,1432,0.00000,,,0.00000,,,0
+btc,FDR intervals,train,base,0.10000,0,1432,0.00000,,,0.00000,,,0
+btc,FDR intervals,train,high,0.20000,0,1432,0.00000,,,0.00000,,,0
+btc,FDR intervals,validation,low,0.02000,0,365,0.00000,,,0.00000,,,0
+btc,FDR intervals,validation,base,0.10000,0,365,0.00000,,,0.00000,,,0
+btc,FDR intervals,validation,high,0.20000,0,365,0.00000,,,0.00000,,,0
+btc,FDR intervals,test,low,0.02000,0,1095,0.00000,,,0.00000,,,0
+btc,FDR intervals,test,base,0.10000,0,1095,0.00000,,,0.00000,,,0
+btc,FDR intervals,test,high,0.20000,0,1095,0.00000,,,0.00000,,,0
+btc,HKS same-interval momentum,train,low,0.02000,288,1432,0.10392,0.44635,0.86126,-5.65608,-24.29380,0.00036,0
+btc,HKS same-interval momentum,train,base,0.10000,288,1432,0.10392,0.44635,0.86126,-28.69608,-123.25438,0.00036,0
+btc,HKS same-interval momentum,train,high,0.20000,288,1432,0.10392,0.44635,0.86126,-57.49608,-246.95512,0.00036,0
+btc,HKS same-interval momentum,validation,low,0.02000,288,365,0.40695,2.26844,2.35796,-5.35305,-29.83912,0.00141,0
+btc,HKS same-interval momentum,validation,base,0.10000,288,365,0.40695,2.26844,2.35796,-28.39305,-158.26936,0.00141,0
+btc,HKS same-interval momentum,validation,high,0.20000,288,365,0.40695,2.26844,2.35796,-57.19305,-318.80717,0.00141,0
+btc,HKS same-interval momentum,test,low,0.02000,288,1095,0.10632,0.75913,1.34067,-5.65368,-40.36812,0.00037,0
+btc,HKS same-interval momentum,test,base,0.10000,288,1095,0.10632,0.75913,1.34067,-28.69368,-204.87712,0.00037,0
+btc,HKS same-interval momentum,test,high,0.20000,288,1095,0.10632,0.75913,1.34067,-57.49368,-410.51337,0.00037,0

@@ -1,0 +1,4 @@
+asset,windows,median_disp_raw,median_disp_filtered,share_windows_filtered_better,wilcoxon_p_one_sided,median_min_persistence_raw,median_min_persistence_filtered
+btc,8,0.3362,0.3670,0.6250,0.2305,0.8876,0.8867
+eurusd,20,0.8434,0.7045,0.8500,0.0002,0.0886,0.8709
+spx,14,0.3148,0.1895,0.8571,0.0176,0.9305,0.9469
