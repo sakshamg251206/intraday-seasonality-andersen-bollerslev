@@ -12,6 +12,7 @@ The `arch` package is not used because it offers AR but not MA mean dynamics.
 """
 from __future__ import annotations
 
+import warnings
 from dataclasses import dataclass
 
 import numpy as np
@@ -91,7 +92,12 @@ def fit_ma1_garch11(y: np.ndarray | pd.Series, starts: list[tuple[float, float]]
         p0 = np.array([y.mean(), 0.0, scale * (1 - a0 - b0), a0, b0])
         z0 = _from_params(p0, scale)
         nll = lambda z: -_loglik_obs(_to_params(z, scale), y).sum() / len(y)
-        res = minimize(nll, z0, method="L-BFGS-B")
+        # Finite-difference gradients can step to the edge of the parameter
+        # space (tanh -> +-1, h -> 0), where the loglik is inf/nan; L-BFGS-B
+        # rejects such steps. The resulting RuntimeWarning is benign noise.
+        with warnings.catch_warnings():
+            warnings.simplefilter("ignore", RuntimeWarning)
+            res = minimize(nll, z0, method="L-BFGS-B")
         if best is None or res.fun < best.fun:
             best = res
     p = _to_params(best.x, scale)
