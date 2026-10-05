@@ -7,6 +7,16 @@ authors:
     given-names: Saksham
 version: 1.0.0
 date-released: 2026-10-05
+doi: 10.5281/zenodo.23157546
+identifiers:
+  - type: doi
+    value: 10.5281/zenodo.23157546
+    description: Concept DOI (all versions)
+  - type: doi
+    value: 10.5281/zenodo.23157548
+    description: Version DOI for v1.0.0
+repository-code: "https://github.com/sakshamg251206/intraday-seasonality-andersen-bollerslev"
+url: "https://doi.org/10.5281/zenodo.23157546"
 license: MIT
 keywords:
   - intraday seasonality

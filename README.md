@@ -5,7 +5,7 @@
 [![Python 3.12](https://img.shields.io/badge/python-3.12-blue.svg)](pyproject.toml)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](LICENSE)
 [![Paper](https://img.shields.io/badge/paper-PDF-red.svg)](paper/main.pdf)
-<!-- ZENODO-BADGE -->
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.23157546.svg)](https://doi.org/10.5281/zenodo.23157546)
 
 > **Research question.** Does the deterministic intraday pattern in volatility still distort inference about volatility dynamics, as Andersen & Bollerslev showed in 1997, and does modelling it pay off *out of sample*, for volatility forecasts, for risk management or for trading?
 
@@ -187,7 +187,20 @@ Full discussion: paper Section 11.
 
 ## Citation
 
-If you use this work, please cite it via [`CITATION.cff`](CITATION.cff) and also cite the original paper:
+If you use this work, please cite it (see also [`CITATION.cff`](CITATION.cff)) together with the original paper:
+
+```bibtex
+@software{garg2026intraday,
+  title     = {Intraday Periodicity and Volatility Persistence, Revisited: A Replication and Extension of Andersen \& Bollerslev (1997)},
+  author    = {Garg, Saksham},
+  year      = {2026},
+  publisher = {Zenodo},
+  version   = {1.0.0},
+  doi       = {10.5281/zenodo.23157546},
+  url       = {https://doi.org/10.5281/zenodo.23157546}
+}
+```
+
 
 ```bibtex
 @article{andersen1997intraday,
@@ -202,7 +215,10 @@ If you use this work, please cite it via [`CITATION.cff`](CITATION.cff) and also
 ## Zenodo archive
 
 <!-- ZENODO-SECTION -->
-**Status: not yet archived.** A Zenodo DOI will be added here once the final release has been deposited. No DOI exists yet; please do not cite one.
+The final research artifact (code, paper, figures, tables, README and metadata) is archived on **Zenodo**:
+
+- **Concept DOI (all versions, always resolves to the latest):** [10.5281/zenodo.23157546](https://doi.org/10.5281/zenodo.23157546)
+- **Version DOI, v1.0.0:** [10.5281/zenodo.23157548](https://doi.org/10.5281/zenodo.23157548) · [Zenodo record](https://zenodo.org/records/23157548)
 
 ## License
 
