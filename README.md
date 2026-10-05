@@ -132,7 +132,8 @@ Replication, extensions and original research are kept separate. See paper Secti
 Requirements: [uv](https://docs.astral.sh/uv/) (Python 3.12 is installed automatically, and every dependency is pinned in `uv.lock`), plus LaTeX (`latexmk`) for the paper.
 
 ```bash
-git clone <this-repo> && cd <this-repo>
+git clone https://github.com/sakshamg251206/intraday-seasonality-andersen-bollerslev.git
+cd intraday-seasonality-andersen-bollerslev
 make all          # or ./reproduce.sh
 ```
 

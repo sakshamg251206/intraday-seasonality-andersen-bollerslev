@@ -1,0 +1,13 @@
+{
+  "title": "Intraday Periodicity and Volatility Persistence, Revisited: A Replication and Extension of Andersen & Bollerslev (1997)",
+  "upload_type": "software",
+  "description": "<p>Replication and extension of Andersen &amp; Bollerslev (1997, Journal of Empirical Finance 4, 115-158) on EUR/USD (2004-2025), S&amp;P 500 (2010-2025) and BTC/USDT (2018-2025) using free, key-less data sources. Includes: a fully reproducible Python pipeline (pinned with uv); a week-by-week correction of an undocumented timestamp convention in HistData; replication of all figures and Tables 1-5; a zero-robust Poisson pseudo-ML estimator of the Flexible Fourier Form; rolling-window robustness of GARCH aggregation consistency; strict walk-forward out-of-sample tests of intraday volatility forecasts, risk targeting and intraday mean-return trading rules after costs; the research paper (PDF), figures and tables.</p><p>Market data are not redistributed; scripts download them from the original providers.</p>",
+  "creators": [{"name": "Garg, Saksham"}],
+  "license": "MIT",
+  "keywords": ["intraday seasonality", "intraday periodicity", "volatility", "GARCH", "flexible Fourier form", "high-frequency finance", "replication", "foreign exchange", "S&P 500", "bitcoin"],
+  "related_identifiers": [
+    {"identifier": "10.1016/S0927-5398(97)00004-2", "relation": "isSupplementTo", "scheme": "doi", "resource_type": "publication-article"}
+  ],
+  "version": "1.0.0",
+  "language": "eng"
+}
